@@ -1,6 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
-import http from "../utils/Http";
 import { API_ENDPOINT } from "../utils/api-endpoint";
+import { http } from "../utils/Http";
 
 const fetchDataUpcoming = async () => {
   const { data } = await http.get(API_ENDPOINT.GET_UPCOMING);

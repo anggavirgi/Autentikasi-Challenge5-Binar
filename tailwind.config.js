@@ -10,9 +10,12 @@ module.exports = withMT({
   theme: {
     extend: {
       colors: {
-        'main': '#141414',
-        'secondary': '#FF6B00',
-        },
+        main: "#141414",
+        secondary: "#FF6B00",
+      },
+      screens: {
+        max: "1400px",
+      },
     },
   },
   plugins: [],

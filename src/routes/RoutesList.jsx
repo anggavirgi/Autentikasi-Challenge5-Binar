@@ -6,12 +6,19 @@ import { Detail } from "../pages/Detail";
 import { About } from "../pages/About";
 import { NowPlaying } from "../pages/NowPlaying";
 import { Popular } from "../pages/Popular";
+import { Login } from "../pages/Login";
+import { Register } from "../pages/Register";
 
 export const RoutesList = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
+
+        <Route path="/" element={<Login />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+
         <Route path="/nowplaying" element={<NowPlaying />} />
         <Route path="/popular" element={<Popular />} />
         <Route path="/search" element={<SearchResult />} />

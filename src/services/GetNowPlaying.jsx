@@ -1,6 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
-import http from "../utils/Http";
 import { API_ENDPOINT } from "../utils/api-endpoint";
+import { http } from "../utils/Http";
 
 const fetchDataNowPlaying = async ({ queryKey }) => {
   const [_key, _params] = queryKey;

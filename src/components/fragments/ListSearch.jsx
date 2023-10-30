@@ -10,7 +10,7 @@ export const ListSearch = () => {
     query: dataSearch.state.search,
   });
 
-  const searchResult = fetchSearch?.results || [];
+  const searchResult = fetchSearch?.data || [];
 
   const detailPage = (id) => {
     navigate("/detail", {
@@ -59,7 +59,7 @@ export const ListSearch = () => {
 
   return (
     <div className="px-14 pt-6 bg-main text-white">
-      {isSuccess && searchResult.length == 0 ? (
+      {isSuccess && searchResult.length === 0 ? (
         <div className="font-bold text-3xl text-center">
           <div className="mb-3">KEYWORD : {dataSearch.state.search}</div>
           <div>== SEARCH NOT FOUND ==</div>
